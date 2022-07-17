@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.98.0">
+  <title>Checkout example · Bootstrap v5.2</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/checkout/">
+
+
+  <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+
+  <div class="container">
+    <main>
+      <div class="py-5 text-start">
+        <img class="d-block mb-4" src="../assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
+        <h2>Formulario de pago</h2>
+      </div>
+
+      <div class="row g-5">
+        <div class="col-md-5 col-lg-4 order-md-last">
+          <h4 class="d-flex justify-content-between align-items-center mb-3">
+            <span class="text-primary">Tu carrito</span>
+            <span class="badge bg-primary rounded-pill">3</span>
+          </h4>
+          <ul class="list-group mb-3">
+            <li class="list-group-item d-flex justify-content-between lh-sm">
+              <div>
+                <h6 class="my-0">Vino tinto</h6>
+                <small class="text-muted">750ml</small>
+              </div>
+              <span class="text-muted">$500</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-sm">
+              <div>
+                <h6 class="my-0">Pan</h6>
+                <small class="text-muted">1kg</small>
+              </div>
+              <span class="text-muted">$300</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-sm">
+              <div>
+                <h6 class="my-0">Fideos</h6>
+                <small class="text-muted">500gr</small>
+              </div>
+              <span class="text-muted">$200</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between bg-light">
+              <div class="text-success">
+                <h6 class="my-0">Codigo promocional</h6>
+                <small>10OFF</small>
+              </div>
+              <span class="text-success">−$100</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+              <span>Total</span>
+              <strong>$900</strong>
+            </li>
+          </ul>
+
+          <form class="card p-2">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Codigo promocional">
+              <button type="submit" class="btn btn-secondary">Aplicar</button>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-7 col-lg-8">
+          <h4 class="mb-3">Direccion de facturación</h4>
+          <form class="needs-validation" novalidate>
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <label for="firstName" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+              </div>
+
+              <div class="col-sm-6">
+                <label for="lastName" class="form-label">Apellido</label>
+                <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+
+              </div>
+
+              <div class="col-12">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="correo@gmail.com">
+              </div>
+
+              <div class="col-12">
+                <label for="address" class="form-label">Direccion</label>
+                <input type="text" class="form-control" id="address" placeholder="Libertador 235" required>
+
+              </div>
+
+              <div class="col-md-5">
+                <label for="country" class="form-label">País</label>
+                <select class="form-select" id="country" required>
+                  <option value="">Elegir</option>
+                  <option>Argentina</option>
+                </select>
+              </div>
+
+              <div class="col-md-4">
+                <label for="state" class="form-label">Provincia</label>
+                <select class="form-select" id="state" required>
+                  <option value="">Choose...</option>
+                  <option>San juan</option>
+
+                </select>
+              </div>
+
+              <div class="col-md-3">
+                <label for="zip" class="form-label">Codigo postal</label>
+                <input type="text" class="form-control" id="zip" placeholder="" required>
+
+              </div>
+            </div>
+
+            <hr class="my-4">
+
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="same-address">
+              <label class="form-check-label" for="same-address">La dirección de envío es la misma que mi dirección de
+                facturación</label>
+            </div>
+
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="save-info">
+              <label class="form-check-label" for="save-info">Guardar esta información para la próxima vez</label>
+            </div>
+
+            <hr class="my-4">
+
+            <h4 class="mb-3">Pago</h4>
+
+            <div class="my-3">
+              <div class="form-check">
+                <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
+                <label class="form-check-label" for="credit">Tarjeta de credito</label>
+              </div>
+              <div class="form-check">
+                <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+                <label class="form-check-label" for="debit">Tarjeta de debito</label>
+              </div>
+
+            </div>
+
+            <div class="row gy-3">
+              <div class="col-md-6">
+                <label for="cc-name" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="cc-name" placeholder="" required>
+                <small class="text-muted">Nombre completo como se muestra en la tarjeta</small>
+
+              </div>
+
+              <div class="col-md-6">
+                <label for="cc-number" class="form-label">Numero</label>
+                <input type="text" class="form-control" id="cc-number" placeholder="" required>
+
+              </div>
+
+              <div class="col-md-3">
+                <label for="cc-expiration" class="form-label">Vencimiento</label>
+                <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+
+              </div>
+
+              <div class="col-md-3">
+                <label for="cc-cvv" class="form-label">CVV</label>
+                <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+                <div class="invalid-feedback">
+                  Security code required
+                </div>
+              </div>
+            </div>
+
+            <hr class="my-4">
+
+            <button class="w-100 btn btn-primary btn-lg" type="submit">Pagar</button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer class="my-5 pt-5 text-muted text-center text-small">
+
+    </footer>
+  </div>
+
+
+  <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="form-validation.js"></script>
+</body>
+
+</html>
