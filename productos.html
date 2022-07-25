@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Resultados</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
@@ -140,12 +140,12 @@
                                     Categorías
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><button class="dropdown-item" type="button">Tecnologia</button></li>
-                                    <li><button class="dropdown-item" type="button">Electrodomesticos</button></li>
-                                    <li><button class="dropdown-item" type="button">Muebles</button></li>
-                                    <li><button class="dropdown-item" type="button">Herramientas</button></li>
-                                    <li><button class="dropdown-item" type="button">Jueguetes</button></li>
-                                    <li><button class="dropdown-item" type="button">Tiempo libre</button></li>
+                                    <li><a href="productos.html" class="dropdown-item" type="button">Tecnologia</a></li>
+                                    <li><a href="productos.html" class="dropdown-item" type="button">Electrodomesticos</a></li>
+                                    <li><a href="productos.html" class="dropdown-item" type="button">Muebles</a></li>
+                                    <li><a href="productos.html" class="dropdown-item" type="button">Herramientas</a></li>
+                                    <li><a href="productos.html" class="dropdown-item" type="button">Jueguetes</a></li>
+                                    <li><a href="productos.html" class="dropdown-item" type="button">Tiempo libre</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -187,6 +187,15 @@
                         <li class="nav-item">
                             <a class="nav-link text-decoration-none text-reset" type="button"><svg
                                     xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                    class="me-2 bi bi-credit-card" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1H2zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7z" />
+                                    <path d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1z" />
+                                </svg>Medios de pago</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-decoration-none text-reset" type="button"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                                     class="me-2 bi bi-question-circle" viewBox="0 0 16 16">
                                     <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
                                     <path
@@ -203,15 +212,7 @@
                                 </svg>Sucursales</a>
 
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-decoration-none text-reset" type="button"><svg
-                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-                                    class="me-2 bi bi-credit-card" viewBox="0 0 16 16">
-                                    <path
-                                        d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1H2zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7z" />
-                                    <path d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1z" />
-                                </svg>Medios de pago</a>
-                        </li>
+                        
 
                         <li class="nav-item">
                             <a class="nav-link btn btn-danger rounded-pill text-decoration-none text-light"
@@ -230,7 +231,28 @@
     </nav>
     <!--fin nav-->
     <div class="container pb-5">
-        <h3 class="mb-3">Resultados:</h3>
+        <div class="d-flex align-items-center justify-content-between">
+            <h3 class="mb-3">Resultados:</h3>
+            <div class="dropdown">
+                <a class="text-decoration-none text-reset dropdown dropdown-toggle d-flex align-items-center" type="button"
+                    data-bs-toggle="dropdown" aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                        height="16" fill="currentColor" class="me-2 bi bi-sort-down" viewBox="0 0 16 16">
+                        <path
+                            d="M3.5 2.5a.5.5 0 0 0-1 0v8.793l-1.146-1.147a.5.5 0 0 0-.708.708l2 1.999.007.007a.497.497 0 0 0 .7-.006l2-2a.5.5 0 0 0-.707-.708L3.5 11.293V2.5zm3.5 1a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zM7.5 6a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zm0 3a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1h-3zm0 3a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1h-1z">
+                        </path>
+                    </svg>
+                    Ordenar
+                </a>
+                <ul class="dropdown-menu">
+                    <li><button class="dropdown-item" type="button">Mas vendidos</button></li>
+                    <li><button class="dropdown-item" type="button">A - Z</button></li>
+                    <li><button class="dropdown-item" type="button">Z - A</button></li>
+                    <li><button class="dropdown-item" type="button">Menor precio</button></li>
+                    <li><button class="dropdown-item" type="button">Mayor precio</button></li>
+
+                </ul>
+            </div>
+        </div>
         <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4">
             <div class="col">
                 <div class="card h-100">
@@ -238,53 +260,60 @@
                     <div class="card-body">
                         <h5 class="card-title">Agua mineral - VEA</h5>
                         <p class="card-text">2 Lts</p>
+                        <p class="card-text fs-5 fw-semibold">$500</p>
                     </div>
-                    <div class="card-footer text-center">
-                        <div class="btn-group" role="group" aria-label="Basic example">
+                    <div class="card-footer">
+                        <div class="btn-group w-100" role="group" aria-label="Basic example">
                             <button type="button" class="btn btn-outline-dark">-</button>
                             <button type="button" class="btn btn-outline-dark">0</button>
                             <button type="button" class="btn btn-outline-dark">+</button>
                         </div>
-                            <a href="#" class="my-2 btn btn-dark">Agregar<i class="ps-2 bi bi-bag"></i></a>
-                      </div>
+                        <a href="#" class="my-2 btn btn-dark w-100">Agregar<i class="ps-2 bi bi-bag"></i></a>
+                    </div>
                 </div>
             </div>
             <div class="col">
                 <div class="card h-100">
-                    <img src="image\productos\Frutos-Secos-La-Sanjuanita-con-Banana-y-Pasas-de-Uva-135-Gr-_1.webp" class="card-img-top" alt="...">
+                    <img src="image\productos\Frutos-Secos-La-Sanjuanita-con-Banana-y-Pasas-de-Uva-135-Gr-_1.webp"
+                        class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Frutos Secos mix</h5>
                         <p class="card-text">500gr</p>
-                       
+                        <p class="card-text fs-5 fw-semibold">$500</p>
+
+
                     </div>
                     <div class="card-footer text-center">
-                        <div class="btn-group" role="group" aria-label="Basic example">
+                        <div class="btn-group w-100" role="group" aria-label="Basic example">
                             <button type="button" class="btn btn-outline-dark">-</button>
                             <button type="button" class="btn btn-outline-dark">0</button>
                             <button type="button" class="btn btn-outline-dark">+</button>
                         </div>
-                        <a href="#" class="my-2 btn btn-dark">Agregar<i class="ps-2 bi bi-bag"></i></a>
-                        
-                      </div>
+                        <a href="#" class="my-2 btn btn-dark w-100">Agregar<i class="ps-2 bi bi-bag"></i></a>
+
+                    </div>
                 </div>
             </div>
             <div class="col">
                 <div class="card h-100">
-                    <img src="image\productos\Nescafe-Dolca-Suave-Perfecto-para-batir-170-Gr-_1.webp" class="card-img-top" alt="...">
+                    <img src="image\productos\Nescafe-Dolca-Suave-Perfecto-para-batir-170-Gr-_1.webp"
+                        class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Cafe dolca suave - Nescafe</h5>
                         <p class="card-text">170gr</p>
-                        
+                        <p class="card-text fs-5 fw-semibold">$500</p>
+
+
                     </div>
                     <div class="card-footer text-center">
-                        <div class="btn-group" role="group" aria-label="Basic example">
+                        <div class="btn-group w-100" role="group" aria-label="Basic example">
                             <button type="button" class="btn btn-outline-dark">-</button>
                             <button type="button" class="btn btn-outline-dark">0</button>
                             <button type="button" class="btn btn-outline-dark">+</button>
                         </div>
-                        <a href="#" class="my-2 btn btn-dark">Agregar<i class="ps-2 bi bi-bag"></i></a>
-                        
-                      </div>
+                        <a href="#" class="my-2 btn btn-dark w-100">Agregar<i class="ps-2 bi bi-bag"></i></a>
+
+                    </div>
                 </div>
             </div>
             <div class="col">
@@ -293,16 +322,17 @@
                     <div class="card-body">
                         <h5 class="card-title">Yogurt descremado firme - Serenisima</h5>
                         <p class="card-text">190gr</p>
-                        
+                        <p class="card-text fs-5 fw-semibold bg-">$500</p>
+
                     </div>
-                    <div class="card-footer text-center">
-                        <div class="btn-group col" role="group" aria-label="Basic example">
+                    <div class="card-footer">
+                        <div class="btn-group w-100" role="group" aria-label="Basic example">
                             <button type="button" class="btn btn-outline-dark">-</button>
                             <button type="button" class="btn btn-outline-dark">0</button>
                             <button type="button" class="btn btn-outline-dark">+</button>
                         </div>
-                        <a href="#" class="my-2 btn btn-dark">Agregar<i class="ps-2 bi bi-bag"></i></a>
-                      </div>
+                        <a href="#" class="my-2 btn btn-dark w-100">Agregar<i class="ps-2 bi bi-bag"></i></a>
+                    </div>
                 </div>
             </div>
             <div class="col">
@@ -311,53 +341,60 @@
                     <div class="card-body">
                         <h5 class="card-title">Agua mineral - VEA</h5>
                         <p class="card-text">2 Lts</p>
+                        <p class="card-text fs-5 fw-semibold">$500</p>
                     </div>
-                    <div class="card-footer text-center">
-                        <div class="btn-group" role="group" aria-label="Basic example">
+                    <div class="card-footer">
+                        <div class="btn-group w-100" role="group" aria-label="Basic example">
                             <button type="button" class="btn btn-outline-dark">-</button>
                             <button type="button" class="btn btn-outline-dark">0</button>
                             <button type="button" class="btn btn-outline-dark">+</button>
                         </div>
-                            <a href="#" class="my-2 btn btn-dark">Agregar<i class="ps-2 bi bi-bag"></i></a>
-                      </div>
+                        <a href="#" class="my-2 btn btn-dark w-100">Agregar<i class="ps-2 bi bi-bag"></i></a>
+                    </div>
                 </div>
             </div>
             <div class="col">
                 <div class="card h-100">
-                    <img src="image\productos\Frutos-Secos-La-Sanjuanita-con-Banana-y-Pasas-de-Uva-135-Gr-_1.webp" class="card-img-top" alt="...">
+                    <img src="image\productos\Frutos-Secos-La-Sanjuanita-con-Banana-y-Pasas-de-Uva-135-Gr-_1.webp"
+                        class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Frutos Secos mix</h5>
                         <p class="card-text">500gr</p>
-                       
+                        <p class="card-text fs-5 fw-semibold">$500</p>
+
+
                     </div>
                     <div class="card-footer text-center">
-                        <div class="btn-group" role="group" aria-label="Basic example">
+                        <div class="btn-group w-100" role="group" aria-label="Basic example">
                             <button type="button" class="btn btn-outline-dark">-</button>
                             <button type="button" class="btn btn-outline-dark">0</button>
                             <button type="button" class="btn btn-outline-dark">+</button>
                         </div>
-                        <a href="#" class="my-2 btn btn-dark">Agregar<i class="ps-2 bi bi-bag"></i></a>
-                        
-                      </div>
+                        <a href="#" class="my-2 btn btn-dark w-100">Agregar<i class="ps-2 bi bi-bag"></i></a>
+
+                    </div>
                 </div>
             </div>
             <div class="col">
                 <div class="card h-100">
-                    <img src="image\productos\Nescafe-Dolca-Suave-Perfecto-para-batir-170-Gr-_1.webp" class="card-img-top" alt="...">
+                    <img src="image\productos\Nescafe-Dolca-Suave-Perfecto-para-batir-170-Gr-_1.webp"
+                        class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Cafe dolca suave - Nescafe</h5>
                         <p class="card-text">170gr</p>
-                        
+                        <p class="card-text fs-5 fw-semibold">$500</p>
+
+
                     </div>
                     <div class="card-footer text-center">
-                        <div class="btn-group" role="group" aria-label="Basic example">
+                        <div class="btn-group w-100" role="group" aria-label="Basic example">
                             <button type="button" class="btn btn-outline-dark">-</button>
                             <button type="button" class="btn btn-outline-dark">0</button>
                             <button type="button" class="btn btn-outline-dark">+</button>
                         </div>
-                        <a href="#" class="my-2 btn btn-dark">Agregar<i class="ps-2 bi bi-bag"></i></a>
-                        
-                      </div>
+                        <a href="#" class="my-2 btn btn-dark w-100">Agregar<i class="ps-2 bi bi-bag"></i></a>
+
+                    </div>
                 </div>
             </div>
             <div class="col">
@@ -366,16 +403,17 @@
                     <div class="card-body">
                         <h5 class="card-title">Yogurt descremado firme - Serenisima</h5>
                         <p class="card-text">190gr</p>
-                        
+                        <p class="card-text fs-5 fw-semibold bg-">$500</p>
+
                     </div>
-                    <div class="card-footer text-center">
-                        <div class="btn-group col" role="group" aria-label="Basic example">
+                    <div class="card-footer">
+                        <div class="btn-group w-100" role="group" aria-label="Basic example">
                             <button type="button" class="btn btn-outline-dark">-</button>
                             <button type="button" class="btn btn-outline-dark">0</button>
                             <button type="button" class="btn btn-outline-dark">+</button>
                         </div>
-                        <a href="#" class="my-2 btn btn-dark">Agregar<i class="ps-2 bi bi-bag"></i></a>
-                      </div>
+                        <a href="#" class="my-2 btn btn-dark w-100">Agregar<i class="ps-2 bi bi-bag"></i></a>
+                    </div>
                 </div>
             </div>
             <div class="col">
@@ -384,53 +422,58 @@
                     <div class="card-body">
                         <h5 class="card-title">Agua mineral - VEA</h5>
                         <p class="card-text">2 Lts</p>
+                        <p class="card-text fs-5 fw-semibold">$500</p>
                     </div>
-                    <div class="card-footer text-center">
-                        <div class="btn-group" role="group" aria-label="Basic example">
+                    <div class="card-footer">
+                        <div class="btn-group w-100" role="group" aria-label="Basic example">
                             <button type="button" class="btn btn-outline-dark">-</button>
                             <button type="button" class="btn btn-outline-dark">0</button>
                             <button type="button" class="btn btn-outline-dark">+</button>
                         </div>
-                            <a href="#" class="my-2 btn btn-dark">Agregar<i class="ps-2 bi bi-bag"></i></a>
-                      </div>
+                        <a href="#" class="my-2 btn btn-dark w-100">Agregar<i class="ps-2 bi bi-bag"></i></a>
+                    </div>
                 </div>
             </div>
             <div class="col">
                 <div class="card h-100">
-                    <img src="image\productos\Frutos-Secos-La-Sanjuanita-con-Banana-y-Pasas-de-Uva-135-Gr-_1.webp" class="card-img-top" alt="...">
+                    <img src="image\productos\Frutos-Secos-La-Sanjuanita-con-Banana-y-Pasas-de-Uva-135-Gr-_1.webp"
+                        class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Frutos Secos mix</h5>
                         <p class="card-text">500gr</p>
-                       
+                        <p class="card-text fs-5 fw-semibold">$500</p>
+
+
                     </div>
                     <div class="card-footer text-center">
-                        <div class="btn-group" role="group" aria-label="Basic example">
+                        <div class="btn-group w-100" role="group" aria-label="Basic example">
                             <button type="button" class="btn btn-outline-dark">-</button>
                             <button type="button" class="btn btn-outline-dark">0</button>
                             <button type="button" class="btn btn-outline-dark">+</button>
                         </div>
-                        <a href="#" class="my-2 btn btn-dark">Agregar<i class="ps-2 bi bi-bag"></i></a>
-                        
-                      </div>
+                        <a href="#" class="my-2 btn btn-dark w-100">Agregar<i class="ps-2 bi bi-bag"></i></a>
+
+                    </div>
                 </div>
             </div>
             <div class="col">
                 <div class="card h-100">
-                    <img src="image\productos\Nescafe-Dolca-Suave-Perfecto-para-batir-170-Gr-_1.webp" class="card-img-top" alt="...">
+                    <img src="image\productos\Nescafe-Dolca-Suave-Perfecto-para-batir-170-Gr-_1.webp"
+                        class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Cafe dolca suave - Nescafe</h5>
                         <p class="card-text">170gr</p>
-                        
+                        <p class="card-text fs-5 fw-semibold">$500</p>
+
                     </div>
                     <div class="card-footer text-center">
-                        <div class="btn-group" role="group" aria-label="Basic example">
+                        <div class="btn-group w-100" role="group" aria-label="Basic example">
                             <button type="button" class="btn btn-outline-dark">-</button>
                             <button type="button" class="btn btn-outline-dark">0</button>
                             <button type="button" class="btn btn-outline-dark">+</button>
                         </div>
-                        <a href="#" class="my-2 btn btn-dark">Agregar<i class="ps-2 bi bi-bag"></i></a>
-                        
-                      </div>
+                        <a href="#" class="my-2 btn btn-dark w-100">Agregar<i class="ps-2 bi bi-bag"></i></a>
+                    </div>
                 </div>
             </div>
             <div class="col">
@@ -439,16 +482,16 @@
                     <div class="card-body">
                         <h5 class="card-title">Yogurt descremado firme - Serenisima</h5>
                         <p class="card-text">190gr</p>
-                        
+                        <p class="card-text fs-5 fw-semibold bg-">$500</p>
                     </div>
-                    <div class="card-footer text-center">
-                        <div class="btn-group col" role="group" aria-label="Basic example">
+                    <div class="card-footer">
+                        <div class="btn-group w-100" role="group" aria-label="Basic example">
                             <button type="button" class="btn btn-outline-dark">-</button>
                             <button type="button" class="btn btn-outline-dark">0</button>
                             <button type="button" class="btn btn-outline-dark">+</button>
                         </div>
-                        <a href="#" class="my-2 btn btn-dark">Agregar<i class="ps-2 bi bi-bag"></i></a>
-                      </div>
+                        <a href="#" class="my-2 btn btn-dark w-100">Agregar<i class="ps-2 bi bi-bag"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
