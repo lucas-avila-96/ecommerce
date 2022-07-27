@@ -17,7 +17,7 @@
 
 <body class="bg-light text-dark">
     <!--header-->
-    <header class="header py-2 sticky-top border-bottom">
+    <header class="header py-2 sticky-top">
         <div class="container">
             <div class="d-flex align-items-center">
                 <div class="me-auto">
@@ -42,7 +42,7 @@
                                 d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
                         </svg>
                     </a>
-                    <form class="dropdown-menu p-4" style="width: 18rem;">
+                    <form class="dropdown-menu p-3" style="width: 18rem;">
                         <div class="mb-3">
                             <label for="exampleDropdownFormEmail2" class="form-label">Correo</label>
                             <input type="email" class="form-control" id="exampleDropdownFormEmail2"
@@ -135,7 +135,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-between flex-grow-1 pe-3">
+                    <ul class="navbar-nav justify-content-between flex-grow-1">
                         <li class="nav-item">
                             <div class="dropdown py-2">
                                 <a class="text-decoration-none text-reset dropdown-toggle" type="button"
@@ -241,7 +241,7 @@
             <h3 class="mb-3">Resultados:</h3>
             <div class="dropdown">
                 <a class="text-decoration-none text-reset dropdown dropdown-toggle d-flex align-items-center"
-                    type="button" data-bs-toggle="dropdown" aria-expanded="false"><svg
+                    type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="true"><svg
                         xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                         class="me-2 bi bi-sort-down" viewBox="0 0 16 16">
                         <path
@@ -250,14 +250,40 @@
                     </svg>
                     Ordenar
                 </a>
-                <ul class="dropdown-menu">
-                    <li><button class="dropdown-item" type="button">Mas vendidos</button></li>
-                    <li><button class="dropdown-item" type="button">A - Z</button></li>
-                    <li><button class="dropdown-item" type="button">Z - A</button></li>
-                    <li><button class="dropdown-item" type="button">Menor precio</button></li>
-                    <li><button class="dropdown-item" type="button">Mayor precio</button></li>
-
-                </ul>
+                
+                <div class="dropdown-menu px-3">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Mas vendidos
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            A - Z
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Z - A
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Menor precio
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Mayor precio
+                        </label>
+                    </div>
+                </div>
+         
             </div>
         </div>
         <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4">
