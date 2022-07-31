@@ -1,7 +1,7 @@
 
-            Fonts used: FloodStd,Lobster-Regular 
+            Fonts used: SourceSansPro-Black 
 
-            Colors used: 004644,CAE0DB  
+            Colors used: DC1A21,FFFFFF  
 
-            Icon url: https://thenounproject.com/term/shopping-cart/15220  
+            Icon url: https://thenounproject.com/term/supermarket/2777457  
         
